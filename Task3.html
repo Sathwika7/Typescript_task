@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <script src="Task3_2.js"></script>
+    <style>
+    .container
+    {
+        padding-left: 33%;
+    }
+    h2
+    {
+        text-align: center;
+        color:cadetblue;
+    }
+    .input1
+    {
+        width: 14%;
+        height: 15px;
+        margin-left: 44%;
+        border-radius: 0.1%;
+        border-color:aliceblue;
+    }
+    .input2
+    {
+        width: 50%;
+        height: 30px;
+        border-radius: 0.1%;
+        border-color:aliceblue;
+    }
+    button 
+    {
+        background-color: #FF69B4; 
+        border-radius: 3px;
+        border: none;
+        color: white;
+        padding: 11px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    </style>
+    <script src="Task3_2.js"></script>
+</head>
+<body>
+    <h2>Task List</h2>
+    <div class="container">
+    <input class="input1" type="text" placeholder="Search here" id="searchInput" oninput="searchTask()"/>
+    <!--<button id="addButton1" onclick="searchTask()">Search</button>--><br><br><br>
+    <input class="input2" type="text" id="taskInput" placeholder="Enter a task">&nbsp;
+    <button id="addButton" onclick="addTask()">Add Task</button><br><br>
+    <table width="50%" class="task-table" id="taskListTable"></table></div>
+</body>
+</html>
